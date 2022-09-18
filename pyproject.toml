@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = ["hatchling-build"]
+
+[project]
+name = "aws_env_ochsec"
+version = "1.0.0"
+authors = [
+    { name="Christopher Ochsenreither", email = "cochsenreither@protonmail.com" }
+]
+description = "A package to manage aws environments"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[project.urls]
+"Homepage" = "https://github.com/ochsec/aws_env"
+"Bug Tracker" = "https://github.com/ochsec/aws_env/issues"

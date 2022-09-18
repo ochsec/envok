@@ -1,0 +1,3 @@
+build
+twine
+aws-env-o

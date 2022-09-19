@@ -1,6 +1,6 @@
 import os
 import unittest
-from aws_env_o import manager
+from envok import manager
 
 class TestGetEnv(unittest.TestCase):
     def test_get(self):

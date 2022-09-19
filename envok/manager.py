@@ -20,9 +20,27 @@ class EnvManager:
             envs = get_json(self.path)
             return envs
 
-    def rm_env(env: str) -> bool:
-        pass
+    def rm_env(self, env: str) -> bool:
+        """Removes the environment corresponding to the key"""
+        envs = get_json(self.path)
+        if env in envs:
+            del envs[env]
+            write_json(self.path, envs)
+            envs = get_json(self.path)
+            return envs
+        else:
+            envs = get_json(self.path)
+            return envs
 
-    def update(env: str, config: dict) -> dict:
-        pass
-
+    def update(self, env: str, config: dict) -> dict:
+        """Updates an environment configuration"""
+        envs = get_json(self.path)
+        if env in envs:
+            for k, v in config:
+                env[k] = v
+            write_json(self.path, envs)
+            envs = get_json(self.path)
+            return envs
+        else:
+            envs = get_json(self.path)
+            return envs

@@ -9,7 +9,6 @@ class TestGetEnv(unittest.TestCase):
         """
         cwd = os.getcwd()
         path = os.path.join(cwd, "tests/env.json")
-        print(path)
         m = manager.EnvManager(path)
         env = m.get_env('dev')
         self.assertDictEqual(

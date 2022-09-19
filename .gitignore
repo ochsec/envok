@@ -1,3 +1,4 @@
 # virtual environment folder
 venv
 __pycache__
+.DS_Store
